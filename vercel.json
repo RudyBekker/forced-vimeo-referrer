@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "/api/**/*.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/redirect",
+        "dest": "/api/redirect.js"
+      }
+    ],
+    "env": {
+      "CUSTOM_ENV_VARIABLE": "value"
+    }
+  }
+  
